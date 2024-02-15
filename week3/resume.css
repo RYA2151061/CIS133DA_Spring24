@@ -1,0 +1,28 @@
+*{
+    font-size: 10px;
+    font-family: serif ;
+   
+
+}
+#address{
+    text-align: center;
+
+}
+
+h1{
+    font-family: sans-serif;
+    color: rgb(33, 87, 51);
+    font-size: 3.6rem;
+    background-color: rgb(75, 133, 94);
+    text-align: center;
+}
+h2{
+    font-family: sans-serif;
+    color: rgb(33, 87, 51);
+    font-size: 2.4rem;
+}
+h3{
+    font-family: sans-serif;
+    color: rgb(33, 87, 51);
+    font-size: 2rem;
+}
