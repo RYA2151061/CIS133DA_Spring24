@@ -7,6 +7,10 @@ body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 15vw;
+    grid-template-rows: 75px auto 50px;
+    grid-template-areas: "hdr hdr" "asd mn" "ftr ftr";
 }
 
 header, aside, main, footer {
@@ -17,25 +21,47 @@ header, aside, main, footer {
 header {
     color: white;
     background-color: blue;
+    grid-area: hdr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+
 }
 
 aside {
     background-color: yellow;
+    grid-area: asd;
 }
 
 aside > img {
     border-radius: 50%;
+    grid-area: asd;
 }
 
 main {
+    grid-area: mn;
 }
 
 footer {
     color: white;
     background-color: blue;
+    grid-area: ftr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+
 }
 
-header, footer {
+header, footer, .petwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15rem;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
