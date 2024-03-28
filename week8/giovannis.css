@@ -2,6 +2,10 @@ body {
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 15vw auto;
+    grid-template-rows: 15vh auto 10vh;
+    grid-template-areas: "hdr hdr" "asd mn" "ftr ftr";
 }
 
 header, aside, main, footer {
@@ -12,18 +16,34 @@ header, aside, main, footer {
 header {
     color: white;
     background-color: rgb(33,87,51);
+    grid-area: hdr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+
 }
 
 aside {
     background-color: rgb(75,133,94);
+    grid-area: asd;
 }
 
 main {
+    grid-area: mn;
 }
 
 footer {
     color: white;
     background-color: rgb(53,112,72);
+    grid-area: ftr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+
 }
 
 h1 {
@@ -41,3 +61,4 @@ p {
     padding: 5px;
     border-radius: 3px;
 }
+
