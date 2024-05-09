@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #e390b7;
+    color: #e390b7;
+    font-family: cursive;
+    margin: 1;
+    font-size: larger;
+  }
+  
+  header {
+    background-color: black;
+    color: #e390b7;
+    font-family: cursive;
+    padding: .25em;
+    font-size: xx-large;
+  }
+  
+  nav {
+    background-color:#e390b7;
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
+  nav a:link {
+    color: black;
+  }
+  
+  nav a:visited {
+    color: black;
+  }
+  
+  nav a:hover {
+    color: black;
+  }
+  
+  nav li {
+    border-bottom: 1px solid #e390b7;
+    padding: 0.5em .5em;
+    width: 100%;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    display: block;
+    padding: 1em;
+  }
+  
+  main img {
+    margin: 10px;
+  
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15ch;
+}
+  form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+  }
+  #feline {
+    height: 300px;
+    background-image: url(images/grump.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  dt {
+    color: #e390b7;
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #e390b7;
+    font-family:cursive
+  }
+  
+  h3 {
+    color: #e390b7;
+    font-family: cursive
+  }
+  
+  input, textarea {
+    margin-bottom: .5em;
+  }
+  
+  table {
+    margin: auto;
+    width: 90%;
+    border: 2px solid #e390b7;
+    border-collapse: collapse;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  td, th {
+    padding: 5px;
+    border: 1px solid #e390b7;
+  }
+  
+  tr:nth-of-type(even) {
+    background-color:black;
+  }
+    
+  .text {
+    text-align: left;
+  }
+    
+  #wrapper {
+    background-color:black;
+  }
+  
+  #mobile {
+    display: inline;
+  }
+  
+  #desktop {
+    display: none;
+  }
+  
+  @media (min-width: 600px) {
+    nav ul {
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      padding-right: 2em;
+    }
+  
+    nav li {
+      border-bottom: none;
+      width: 12em;
+    }
+  
+    form {
+      width: 60%;
+      display: grid;
+      column-gap: 1em;
+      grid-template-columns: 10em 1fr;
+    }
+  
+    input[type="submit"] {
+      grid-column: 2;
+    }
+  
+    h1 {
+      font-size: 2em;
+      letter-spacing: 0.25em;
+    }
+
+    #flow {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    #mobile {
+      display: none;
+    }
+  
+    #desktop {
+      display: inline;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      background-image: linear-gradient(
+        to bottom,
+        #ffffff 20%,
+        #90c7e3 60%,
+        #ffffff 100%
+      }
+    nav ul {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    #wrapper {
+      margin: auto;
+      width: 80%;
+    }
+  }
+  
